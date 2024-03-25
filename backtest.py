@@ -4,6 +4,7 @@ import pandas as pd
 from pandas import Series,DataFrame
 from joblib import Parallel,delayed
 from typing import Iterable
+from math import log
 
 
 def weights_limit(returns,weights,limit_up=True,limit_down=True):
