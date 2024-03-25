@@ -4,6 +4,7 @@ from pandas import Series,DataFrame
 from .tools import DataHandle
 import statsmodels.api as sm
 import scipy.stats as scist
+from math import log
 
 
 class StatReturns:
