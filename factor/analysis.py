@@ -4,7 +4,7 @@ from ..backtest import QuickBackTestor
 from pandas import Series,DataFrame
 import pandas as pd
 import numpy as np
-from ..statistics import StatTtest
+from ..data_statistics import StatTtest
 from .utils import MaxLossExceededError
 
 
