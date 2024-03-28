@@ -22,12 +22,20 @@ def CALENDAR_trade_get():
     df.sort_index(inplace=True)
     return df
 
+@memory.cache
+def stock_basic():
+    data = pro.stock_basic(exchange='', fields='ts_code,symbol,name,area,industry,list_date,list_status')
+    data = data.set_index(['ts_code'])
+    return data
+
+
 def unique(lst):
     uni = np.unique(np.array(lst))
     uni.sort()
     return uni
 
 CALENDAR = CALENDAR_trade_get()
+STOCKBASIC = stock_basic()
 
 class CALENDAR:
     
