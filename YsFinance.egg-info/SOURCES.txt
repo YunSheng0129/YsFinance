@@ -1,7 +1,9 @@
+README.md
 setup.py
 YsFinance/MoveStrategy.py
 YsFinance/__init__.py
 YsFinance/backtest.py
+YsFinance/bond.py
 YsFinance/data_statistics.py
 YsFinance/stockcalendar.py
 YsFinance/tools.py
