@@ -7,3 +7,4 @@ from . import MoveStrategy
 
 from . import factor
 from . import portfolio
+from . import bond
